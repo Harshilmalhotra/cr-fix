@@ -8,7 +8,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Plus, ChevronRight, Calendar } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn, generateId } from '@/lib/utils';
 
 export default function AttendancePage() {
   const router = useRouter();
@@ -17,7 +17,7 @@ export default function AttendancePage() {
 
   const handleCreateSession = () => {
     const newSession = {
-      id: crypto.randomUUID(),
+      id: generateId(),
       date: new Date().toISOString(),
       subject: subject || 'General',
       records: {}

@@ -8,6 +8,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Plus, ChevronRight, FileText } from 'lucide-react';
+import { generateId } from '@/lib/utils';
 
 export default function SubmissionsPage() {
   const router = useRouter();
@@ -18,7 +19,7 @@ export default function SubmissionsPage() {
     if (!docName.trim()) return;
 
     const newTracker = {
-      id: crypto.randomUUID(),
+      id: generateId(),
       createdAt: new Date().toISOString(),
       title: docName.trim(),
       submissions: {}
