@@ -24,6 +24,7 @@
     "zustand": "^5.0.10"
   },
   "devDependencies": {
+    "@types/papaparse": "^5.5.2",
     "@types/react": "19.2.9",
     "autoprefixer": "^10.4.23",
     "postcss": "^8.5.6",
