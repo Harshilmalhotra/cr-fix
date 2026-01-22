@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
+    "@tailwindcss/postcss": "^4.1.18",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "html2canvas": "^1.4.1",
@@ -19,15 +20,13 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "tailwind-merge": "^3.4.0",
-    "zustand": "^5.0.10",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4.1.18",
+    "zustand": "^5.0.10"
   },
-,
   "devDependencies": {
     "@types/react": "19.2.9",
     "autoprefixer": "^10.4.23",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.18",
     "typescript": "5.9.3"
   }
 }
